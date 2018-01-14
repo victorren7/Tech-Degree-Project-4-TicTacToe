@@ -120,7 +120,7 @@
         const message = document.createElement('p');
         gameOverScreen.classList.add(`screen-win-${screenType}`);
         if (gamePlay.isTie) {
-            message.textContent = 'Tie Game';
+            message.textContent = 'The game is tied';
         } else if (gamePlay.isTwoPlayer && !gamePlay.isTie) {
             message.textContent = `${playerNames[playerIndex]} Wins`;
         } else if (gamePlay.isOnePlayer && player1.didWin) {
